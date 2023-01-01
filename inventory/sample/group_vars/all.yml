@@ -1,14 +1,14 @@
 ---
 k3s_version: v1.24.8+k3s1
 # this is the user that has ssh access to these machines
-ansible_user: ansibleuser
+ansible_user: peter
 systemd_dir: /etc/systemd/system
 
 # Set your timezone
 system_timezone: "Your/Timezone"
 
 # interface which will be used for flannel
-flannel_iface: "eth0"
+flannel_iface: "ens18"
 
 # apiserver_endpoint is virtual ip-address which will be configured on each master
 apiserver_endpoint: "192.168.30.222"
